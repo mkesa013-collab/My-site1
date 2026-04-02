@@ -1,3 +1,19 @@
+<script>
+if(localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+<button onclick="logout()">تسجيل خروج</button>
+
+<script>
+function logout() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "login.html";
+}
+</script>
+
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -54,13 +70,19 @@ button {
     <p>تعلم البرمجة من الصفر</p>
     <button onclick="alert('قريباً')">قراءة</button>
 </div>
-
 <div class="book">
   <img src="book1.jpg" alt="كتاب">
   <h3>دليل البرمجه</h3>
   <p>السعر: 30 ريال</p>
-  <button>شراء</button>
+  <button>قراءة</button>
 </div>
+
+<a href="https://wa.me/966XXXXXXXXX?text=أبغى أشتري كتاب اسم الكتاب">
+  <button>شراء</button>
+</a>
+
+
+
 <div class="book">
     <h2> كتاب اللغه الانجليزية</h2>
     <p>تعلم اللغة الانجليزيةمن الصفر</p>
@@ -76,6 +98,10 @@ button {
     <p>السعر:49 ريال</p>
     <button onclick="alert('قريباً')">قراءة</button>
 </div>
+<a href="https://wa.me/966XXXXXXXXX?text=أبغى أشتري كتاب اسم الكتاب">
+  <button>شراء</button>
+</a>
+
 
 </body>
 </html>
